@@ -1,0 +1,51 @@
+.landing-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 220px;
+    position: relative; /* Ensure relative positioning for absolute elements */
+}
+
+.landing-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.landing-container p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 20px;
+    position: relative; /* Relative positioning for absolute animation */
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+.landing-container a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #202d3b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.landing-container a:hover {
+    background-color: #0056b3;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
